@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.min.css" />
+  </head>
+  <body>
+    <!-- 跳窗按鈕 -->
+    <a class="excel_export" id="modal1" href="javascript:;">
+      <figure></figure>
+      <p>點擊打開彈跳視窗一號</p>
+    </a>
+
+    <a class="excel_export" id="modal2" href="javascript:;">
+      <figure></figure>
+      <p>點擊打開彈跳視窗二號</p>
+    </a>
+
+    <!-- 跳窗 -->
+    <div class="excel_popup" data-modal="modal1">
+      <div class="excel_close_wrap">
+        <header>
+          <h2>我是跳窗一號</h2>
+          <div class="close" data-close-modal="modal1">Ｘ</div>
+        </header>
+        <p class="txt">Hello World!!!</p>
+        <div class="btn_group">
+          <a class="btn_consider" data-close-modal="modal1">取消</a>
+          <a class="btn_confirm">確定</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="excel_popup" data-modal="modal2">
+      <div class="excel_close_wrap">
+        <header>
+          <h2>我是跳窗二號</h2>
+          <div class="close" data-close-modal="modal2">Ｘ</div>
+        </header>
+        <p class="txt">Hello World!!!</p>
+        <div class="btn_group">
+          <a class="btn_consider" data-close-modal="modal2">取消</a>
+          <a class="btn_confirm">確定</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
